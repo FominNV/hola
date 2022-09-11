@@ -1,0 +1,43 @@
+@import "styles/sass/main";
+
+.Comment {
+  display: flex;
+  column-gap: 16px;
+  width: 100%;
+  margin: 16px 0 0;
+  padding: 12px 0;
+  border-bottom: 2px solid $red;
+
+  &__avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__content {
+    width: calc(100% - 66px);
+  }
+
+  &__date,
+  &__name,
+  &__text {
+    font: 400 22px/32px Libre Baskerville, Georgia, Times New Roman, Times,
+      serif;
+    color: $black;
+  }
+
+  &__date {
+    font-size: 18px;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
