@@ -1,0 +1,70 @@
+@import "styles/sass/main";
+
+.ArticleTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__text-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    width: 40%;
+    height: fit-content;
+    background: $black;
+    padding: 48px 32px 32px;
+
+    @media (max-width: $lg), (max-device-width: $lg) {
+      padding: 20px 16px 12px;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 117px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 234px;
+    height: 30px;
+    padding: 0 8px;
+    background: $red;
+
+    @media (max-width: $lg), (max-device-width: $lg) {
+      left: 0;
+    }
+
+    &_text {
+      font: 700 15px futura-pt, Geneva, Arial, sans-serif;
+      color: white;
+      letter-spacing: 0.5px;
+
+      @media (max-width: $lg), (max-device-width: $lg) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__title {
+    font: 900 38px/57px futura-pt-bold, Geneva, Arial, sans-serif;
+    color: white;
+
+    @media (max-width: $lg), (max-device-width: $lg) {
+      font-size: 22px;
+      line-height: 36px;
+    }
+  }
+
+  &__text {
+    font: 900 14px/20px futura-pt-bold, Geneva, Arial, sans-serif;
+    color: white;
+  }
+
+  &__image {
+    width: 60%;
+    max-width: 300px;
+  }
+}
