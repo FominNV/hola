@@ -1,0 +1,89 @@
+@import "styles/sass/main";
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 66px;
+  padding: 0 8px;
+  background: white;
+  z-index: 50;
+
+  @media (max-width: $lg), (max-device-width: $lg) {
+    background: $red;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1416px;
+    height: 100%;
+  }
+
+  &__logo {
+    width: 113px;
+    height: 47px;
+  }
+
+  &__links {
+    font: 500 16px Arial;
+    letter-spacing: 0.2em;
+    color: $black;
+
+    @media (max-width: $lg), (max-device-width: $lg) {
+      padding: 12px;
+      background: white;
+      border-radius: 8px;
+    }
+  }
+
+  &__link-hi {
+    font: 500 0.8rem/1.5em futura-pt, Geneva, Arial, sans-serif;
+    color: $black-gray;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+  }
+
+  &__text {
+    margin: 0 10px;
+    font: 500 0.8rem/1.5em futura-pt, Geneva, Arial, sans-serif;
+    color: $black-gray;
+    letter-spacing: 0.2em;
+  }
+
+  &__link-beleza {
+    font: 500 0.8rem/1.5em futura-pt, Geneva, Arial, sans-serif;
+    letter-spacing: 0.2em;
+    color: #cc0000;
+    text-decoration: none;
+  }
+
+  &__menu-button {
+    @include btn-reset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 27px;
+  }
+
+  &__menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14.5px;
+    height: 14px;
+    color: $red;
+
+    @media (max-width: $lg), (max-device-width: $lg) {
+      width: 38px;
+      height: 31px;
+      color: white;
+    }
+  }
+}
