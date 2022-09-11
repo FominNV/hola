@@ -1,0 +1,15 @@
+export const dataLinks: string[] = [
+  "HOME",
+  "CELEBRITIES",
+  "ENTERTAINMENT",
+  "ROYALS",
+  "HEALTH AND BEAUTY",
+  "FASHION",
+  "LIFESTYLE",
+  "FOOD",
+  "AMÉRICAS",
+  "HOLA+",
+  "LATINA POWERHOUSE",
+  "PHOTOS",
+  "CONTACT HOLA! USA",
+];
